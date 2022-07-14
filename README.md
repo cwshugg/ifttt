@@ -1,2 +1,5 @@
-# ifttt
-A collection of IFTTT routines I've written to automate things.
+# IFTTT
+
+This repository contains a collection of IFTTT routines & filters I've created
+to make life easier with automation.
+
