@@ -1,0 +1,17 @@
+# Birthday reminder file.
+
+# Globals
+set _send_script "/path/to/birthday-rmd.sh"
+
+# Function that takes in:
+#   p (person)
+#   m (month)
+#   d (day)
+# and uses it to invoke the shell script that pings IFTTT.
+fset _send(p, m, d) _send_script + " '" + p + "' " + m + " " + d
+
+# Example birthday: the day of, one week prior, and one month prior
+rem 14 March at 7:00 run [_send("Billy Bob", 3, 14)]
+rem 14 March -7 at 7:00 run [_send("Billy Bob", 3, 14)]
+rem 14 March -28 at 7:00 run [_send("Billy Bob", 3, 14)]
+
